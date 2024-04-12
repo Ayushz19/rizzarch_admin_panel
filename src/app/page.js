@@ -25,12 +25,12 @@ export default function Home() {
         </AccordionSummary>
         <AccordionDetails className="flex flex-col gap-4 mt-[-20px]" >
           <Link href="/products/add_products">
-          <button className="border-4 border-[#535353] w-fit p-2">
+          <button className="border-[2px] border-[#535353] w-fit p-2">
             Add Products
           </button>
           </Link>
           <Link href="/products/productslist" >
-          <button className="border-4 border-[#535353] w-fit p-2">
+          <button className="border-[2px] border-[#535353] w-fit p-2">
             Products List
           </button>
           </Link>

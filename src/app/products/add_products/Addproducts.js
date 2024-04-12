@@ -205,8 +205,8 @@ const Addproducts = () => {
             </div>
           </div>
         </div>
-        <div className="right side p-4">
-          <div className="img up p-3 ">
+        <div className="right side p-4 mt-5">
+          <div className="img up  ">
             <p className="block text-[24px] leading-6 text-gray-900">
               Upload Image
             </p>
@@ -272,7 +272,7 @@ const Addproducts = () => {
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <DemoContainer components={["DatePicker"]}>
                     <DatePicker
-                      label="Controlled picker"
+                      label="Select Date"
                       value={value}
                       onChange={(newValue) => setValue(newValue)}
                     />
@@ -282,12 +282,65 @@ const Addproducts = () => {
             </div>
           </div>
           <div className="3-buttons flex  justify-between mt-8">
-            <button className="bg-[#1A0F91] text-white p-4 rounded-lg">Add Product</button>
-            <button className="p-4 rounded-lg border-[1px] text-[#1A0F91] border-[#1A0F91]">Delete Product</button>
-            <button className="p-4 rounded-lg border-[1px] border-[#535353] ">Schedule</button>
+            <button className="bg-[#1A0F91] text-white p-2 rounded-lg">
+              Add Product
+            </button>
+            <button className="p-2 rounded-lg border-[1px] text-[#1A0F91] border-[#1A0F91]">
+              Delete Product
+            </button>
+            <button className="p-2 rounded-lg border-[1px] border-[#535353] ">
+              Schedule
+            </button>
           </div>
-          <div className="rest">
-            
+          <div className="rest mt-6 flex flex-col gap-4">
+            <div className="">
+              <h3>Ratings</h3>
+              <input
+                type="text"
+                name="price"
+                id="price"
+                className="block mt-2  rounded-2xl border-0 py-1 pl-3 bg-white  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+            <div className="">
+              <h3>FAQs</h3>
+              <input
+                type="text"
+                name="price"
+                id="price"
+                className="block mt-2  rounded-2xl border-0 py-1 pl-3 bg-white  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+            <div className="">
+              <h3>Brands</h3>
+              <input
+                type="text"
+                name="price"
+                placeholder="Select Brands"
+                id="price"
+                className="block mt-2  rounded-2xl border-0 py-1 pl-3 bg-white  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+            <div className="">
+              <h3>Categories</h3>
+              <input
+                type="text"
+                name="price"
+                placeholder="Select Categories"
+                id="price"
+                className="block mt-2  rounded-2xl border-0 py-1 pl-3 bg-white  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+            <div className="">
+              <h3>Sub Categories</h3>
+              <input
+                type="text"
+                name="price"
+                placeholder="Select Sub categories"
+                id="price"
+                className="block mt-2  rounded-2xl border-0 py-1 pl-3 bg-white  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
           </div>
         </div>
       </div>

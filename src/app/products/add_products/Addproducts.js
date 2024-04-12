@@ -206,7 +206,7 @@ const Addproducts = () => {
           </div>
         </div>
         <div className="right side p-4 mt-5">
-          <div className="img up  ">
+          <div className="img up flex flex-col gap-4  ">
             <p className="block text-[24px] leading-6 text-gray-900">
               Upload Image
             </p>

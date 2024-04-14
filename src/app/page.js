@@ -54,10 +54,11 @@ export default function Home() {
             Add Categories
           </button>
           </Link>
-         
+         <Link href="/categories/categorylist">
           <button className="border-4 border-[#535353] w-fit p-2">
             Categories List
           </button>
+          </Link>
         </AccordionDetails>
       </Accordion>
       </div>

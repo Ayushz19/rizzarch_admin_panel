@@ -3,7 +3,7 @@ import Productslists from './Productslists'
 
 const page = () => {
   return (
-    <div>
+    <div className='p-20'>
         <Productslists />
     </div>
   )

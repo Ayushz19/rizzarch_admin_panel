@@ -90,15 +90,19 @@ export default function Home() {
           id="panel1-header"
           className="p-3"
         >
-          Users
+         Brands
         </AccordionSummary>
         <AccordionDetails className="flex flex-col gap-4 mt-[-20px]" >
+          <Link href="/brands/add_brands">
           <button className="border-4 border-[#535353] w-fit p-2">
-            Add Products
+            Add Brands
           </button>
+          </Link>
+          <Link href="/brands/brandlist">
           <button className="border-4 border-[#535353] w-fit p-2">
-            Products List
+            Brand List
           </button>
+          </Link>
         </AccordionDetails>
       </Accordion>
       </div>

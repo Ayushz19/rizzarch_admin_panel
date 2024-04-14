@@ -47,10 +47,14 @@ export default function Home() {
         >
           Categories
         </AccordionSummary>
+        
         <AccordionDetails className="flex flex-col gap-4 mt-[-20px]" >
+        <Link href="/categories/add_category">
           <button className="border-4 border-[#535353] w-fit p-2">
             Add Categories
           </button>
+          </Link>
+         
           <button className="border-4 border-[#535353] w-fit p-2">
             Categories List
           </button>

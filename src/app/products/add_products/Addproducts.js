@@ -246,7 +246,7 @@ const Addproducts = () => {
               </p>
             </div>
           </div>
-          <div className="size-date flex justify-between  ">
+          <div className="size-date flex justify-between mt-2 ">
             <div className="size">
               <h3>Add size</h3>
               <Box sx={{ minWidth: 120 }}>

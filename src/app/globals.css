@@ -19,6 +19,11 @@
 body {
 background-color: #EDEFF2;
 }
+input {
+  padding-top: 0;
+  padding-left: 0;
+  line-height: 1em; 
+}
 
 @layer utilities {
   .text-balance {

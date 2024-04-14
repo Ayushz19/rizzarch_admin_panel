@@ -113,7 +113,7 @@ const rows = [
   },
 ];
 
-const Productslists = () => {
+const Categorylist = () => {
   return (
     <div className="container">
       <div className="flex flex-row justify-between ">
@@ -182,4 +182,4 @@ const Productslists = () => {
   );
 };
 
-export default Productslists;
+export default Categorylist;

@@ -5,64 +5,47 @@ import { Category } from "@mui/icons-material";
 
 const columns = [
   {
-    field: "Product",
-    headerName: "Product",
-    width: 200,
-    headerClassName: "header-color",
-    align:'left'
-  },
-  { field: "id", headerName: "ID", width: 100 , headerClassName: "header-color" },
-  {
-    field: "Price",
-    headerName: "Price",
-    width: 130,
-    type: "number",
-    headerClassName: "header-color",
-    align:'right'
-  },
-
-  {
-    field: "Quantity",
-    headerName: "Quantity",
-    type: "number",
-    width: 70,
-    headerClassName: "header-color",
-    align:'right'
-  },
-  {
-    field: "sale",
-    headerName: "Sale",
-    type: "number",
-    width: 70,
-    headerClassName: "header-color",
-    align:'right',
-  },
-  {
-    field: "Stock",
-    headerName: "Stock",
-    type: "number",
-    width: 100,
-    headerClassName: "header-color",
-    align:'right'
-  },
-  {
-    field: "Brand",
-    headerName: "Brand",
-    headerClassName: "header-color",
-
-    sortable: false,
-    width: 160,
-    align:'left'
-    // valueGetter: (value, row) => `${row.firstName || ""} ${row.lastName || ""}`,
-  },
-  {
     field: "Category",
     headerName: "Category",
 
     sortable: false,
     width: 160,
     headerClassName: "header-color",
-    align:'left'
+    align: "left",
+    // valueGetter: (value, row) => `${row.firstName || ""} ${row.lastName || ""}`,
+  },
+  {
+    field: "id",
+    headerName: "Icon",
+    width: 100,
+    headerClassName: "header-color",
+  },
+
+  {
+    field: "Quantity",
+    headerName: "Quantity",
+    type: "number",
+    width: 170,
+    headerClassName: "header-color",
+    align: "right",
+  },
+  {
+    field: "sale",
+    headerName: "Sale",
+    type: "number",
+    width: 100,
+    headerClassName: "header-color",
+    align: "right",
+  },
+
+  {
+    field: "Brand",
+    headerName: "Start date",
+    headerClassName: "header-color",
+
+    sortable: false,
+    width: 260,
+    align: "left",
     // valueGetter: (value, row) => `${row.firstName || ""} ${row.lastName || ""}`,
   },
 ];
@@ -77,7 +60,6 @@ const rows = [
     Stock: "out of stock",
     Brand: "Seltos",
     Category: "Furniture",
-    
   },
   {
     Product: "Table",
@@ -95,7 +77,7 @@ const rows = [
     Price: 111200,
     Quantity: 2335,
     sale: 14300,
-    Stock:"In stock",
+    Stock: "In stock",
     Brand: "Seltos",
     Category: "Furniture",
   },
@@ -105,7 +87,7 @@ const rows = [
     Price: 134200,
     Quantity: 325,
     sale: 1030,
-    Stock:"out of stock",
+    Stock: "out of stock",
     Brand: "Seltos",
     Category: "Furniture",
   },
@@ -115,7 +97,7 @@ const rows = [
     Price: 134200,
     Quantity: 325,
     sale: 1030,
-    Stock:"out of stock",
+    Stock: "out of stock",
     Brand: "Seltos",
     Category: "Furniture",
   },
@@ -125,11 +107,10 @@ const rows = [
     Price: 134200,
     Quantity: 325,
     sale: 1030,
-    Stock:"out of stock",
+    Stock: "out of stock",
     Brand: "Seltos",
     Category: "Furniture",
   },
-  
 ];
 
 const Productslists = () => {
@@ -190,12 +171,11 @@ const Productslists = () => {
           pageSizeOptions={[2, 5]}
           checkboxSelection
           sx={{
-            '& .header-color': {
-             
-             color: "grey",
-             fontWeight: 700,
-          },
-        }}
+            "& .header-color": {
+              color: "grey",
+              fontWeight: 700,
+            },
+          }}
         />
       </div>
     </div>
